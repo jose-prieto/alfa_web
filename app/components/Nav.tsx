@@ -18,7 +18,13 @@ export function Nav({ forceSolid = false }: { forceSolid?: boolean }) {
   return (
     <nav className={"nav" + (solid ? " solid" : "")}>
       <a className="brand" href="#top">
-        <span className="logomark">a</span>
+        {/* Usamos tu logo sin fondo que está en assets */}
+        <img 
+          src="/assets/logo-removebg-preview.png" 
+          alt="Alfa Publicidad" 
+          className="h-10 w-auto object-contain"
+          style={{ marginRight: '10px' }}
+        />
         <span>
           alfa
           <span className="pill">publicidad</span>
